@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Adeel Baloch | Portfolio</title>
+  <meta name="description" content="Personal website of Adeel Baloch — CS student at COMSATS University from Dera Ghazi Khan." />
+  <style>
+    :root {
+      --bg1: #0ea5e9;
+      --bg2: #6366f1;
+      --card: #ffffff;
+      --text: #111827;
+      --muted: #6b7280;
+      --accent: #2563eb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--text);
+      background: linear-gradient(135deg, var(--bg1), var(--bg2));
+      min-height: 100dvh;
+    }
+    header {
+      text-align: center;
+      padding: 48px 16px 24px;
+      color: #fff;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.12);
+      padding: 24px;
+      margin: 16px;
+    }
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .profile img {
+      width: 140px; height: 140px; border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fff;
+      box-shadow: 0 6px 18px rgba(0,0,0,.25);
+    }
+    h1 { margin: 12px 0 6px; font-size: clamp(24px, 5vw, 36px); }
+    h2 { margin: 0 0 8px; color: var(--accent); }
+    p { margin: 0 0 12px; line-height: 1.6; }
+    nav a {
+      color: #fff; text-decoration: none; margin: 0 10px; font-weight: 600;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 16px;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    footer {
+      text-align: center; color: #e5e7eb; padding: 24px 12px 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <h1>Assalam o Alaikum — I'm Adeel Baloch</h1>
+    <p>From Dera Ghazi Khan • CS Student @ COMSATS University</p>
+  </header>
+
+  <main>
+    <section id="about" class="card">
+      <div class="profile">
+        <img src="https://i.ibb.co/Z6vYQ5JF/IMG-20250817-WA0040.jpg" alt="Portrait of Adeel Baloch" />
+        <div>
+          <h2>About Me</h2>
+          <p>Hi 👋 I'm <strong>Adeel Baloch</strong>. I love programming and web development.
+             Currently studying <strong>Computer Science</strong> at <strong>COMSATS University</strong>.</p>
+          <a class="btn" href="#projects">See Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <ul>
+        <li>Website Portfolio Design</li>
+        <li>Java Calculator Application</li>
+        <li>Database Management System (Mini Project)</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>Email me: <a href="mailto:adeelbaloch@example.com">adeelbaloch@example.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Adeel Baloch — All Rights Reserved
+  </footer>
+</body>
+</html>
